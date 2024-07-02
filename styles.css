@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+
+:root{
+    --primary-font:"Alata", sans-serif;
+    --secondary-font:"Saira", sans-serif;
+    --phone-font-size: 3rem;
+    --normal-font-size: 4rem;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    color: white;
+    
+    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1{
+    font-family: var(--primary-font);
+}
+
+h2{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1c;   
+
+}
+
+.header{
+    width: 100%;
+    height: 20rem;
+    margin: 0 auto;
+    overflow: hidden; /* Evitar que las imágenes se desborden fuera del contenedor */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.header img{
+    height: 5rem;
+    width: 5rem;
+}
+
+#cover{
+    position: absolute;
+    height: 20rem;
+    width: 100%;
+}
+
+/* #messi,
+#balon,
+#portero,
+#cesped {
+    position: absolute;
+    z-index: 1;
+}
+
+#messi{
+    top: 55%;
+    left: 20%;
+    height: 8rem;
+    width: 8rem;
+    z-index: 2;
+    position: relative;
+    animation: shot 10s linear infinite;
+}
+
+@keyframes shot{
+    0%, 100% {
+        left: 20%;
+
+      }
+    
+    25%, 50%, 75%{
+        left: 36%;
+    }
+
+} */
+
+#balon{
+    top: 77%;
+    left: 46.5%;
+    height: 3rem;
+    width: 3rem;
+    z-index: 2;
+
+}
+
+#portero{
+    left: 44%;
+    top: 50%;
+    height: 5.5rem;
+    width: 5.5rem;
+
+}
+
+#cesped{
+    top: 77.5%;
+    left: 44%;
+    height: 3rem;
+    width: 5rem;
+}
+
+.container{
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.container-data{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+@media (min-width: 768px){
+
+    .header{
+        width: 90%;
+        height: 30rem;    
+    }
+
+    .header img{
+        padding-top: 1.5rem;
+    }
+
+    #arco{
+        height: 32rem;
+        width: 100%;
+    }
+
+    #messi{
+        top: 60%;
+        left: 25%;
+        height: 12rem;
+        width: 12rem;
+        z-index: 2;
+    }
+
+    #balon{
+        top: 80%;
+        height: 5rem;
+        width: 5rem;
+    }
+
+    #portero{
+        height: 9rem;
+        width: 9rem;
+    }
+
+    #cesped{
+        height: 6rem;
+        width: 10rem;
+    }
+
+    .container{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    
+    }
+
+    .container-data{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .header{
+        width: 50%;
+        height: 30rem;
+    }
+
+    .container{
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+    
+    }
+
+    .container-data{
+        width: 45%;
+        height: auto;
+        margin: 0 auto;
+    
+    }
+
+    
+}
+
+
+.photo{
+    margin: -8.5% 0 0 3%;
+    color: white;
+    border: solid;
+    border-color: white;
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+@media (min-width:768px){
+    .photo{
+        margin: -7.5% 0 0 1%;
+        height: 13rem;
+        width: 13rem;     
+    }
+}
+
+@media (min-width:1024px){
+    .photo{
+        margin: -4.5% 0 0 3%;
+        height: 15rem;
+        width: 15rem;     
+    }
+}
+
+.personal-info{
+    margin: 5rem 0 0 0;
+}
+
+@media (min-width:768px){
+    .personal-info{
+        margin: 9rem 0 0 0;
+    }
+
+}
+
+#name-logo{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+}
+
+.personal-info h1{
+    display: inline-block;
+    font-size: 3rem;
+    margin: 0;
+}
+
+@media (min-width:768px){
+    .personal-info h1{
+        display: inline-block;
+        font-size: 4rem;
+        margin: 0;
+    }
+}
+
+#phrase{
+    display: inline-block;
+    font-size: 1rem;
+}
+
+#phrase-logo{
+    height: 3rem;
+    width: 3rem;
+}
+
+#professional{
+    font-size: 1rem;    
+}
+
+@media (min-width:768px){
+    #phrase{
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+
+    #professional{
+        font-size: 1.5rem;    
+    }
+}
+
+.social{
+    margin-top: 10rem;
+}
+
+.social h1{
+    font-size: var(--phone-font-size);
+}
+
+@media(min-width:768px){
+
+    .social h1{
+        font-size: var(--normal-font-size);
+    }
+
+}
+
+
+.icons-container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icons {
+    display: inline-flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+.icons a{
+    color: white;
+    margin: 0 4rem;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+@media(min-width:768px){
+    .icons a{
+        margin: 0 8rem;
+    }
+
+}
+
+.layer{
+    width: 7.5rem;
+    height: 7.5rem;
+    transition: transform 0.3s;
+}
+
+.social span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 0.1rem solid white;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands {
+    display: flex;
+    align-items:end;
+    justify-content:end;
+    font-size: 3.5rem;
+    line-height: 5.5rem;
+}
+
+.text{
+    position: absolute;
+    left: 50%;
+    bottom: -0.5rem;
+    font-weight: 500;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    transition: 
+        bottom 0.3s ease,
+        opacity 0.3s ease;
+}
+
+a:nth-child(1) span,
+a:nth-child(1) .text {
+    color: #1dcaff;
+    border-color: #1dcaff;
+}
+
+a:nth-child(2) span,
+a:nth-child(2) .text {
+    color: #ff0050;
+    border-color: #ff0050;
+}
+
+a:hover .layer{
+    transform: rotate(-35deg) skew(20deg);
+}
+
+a:hover span:nth-child(1){
+    opacity: 0.2;
+}
+
+a:hover span:nth-child(2){
+    opacity: 0.4;
+    transform: translate(0.5rem, -0.5rem) ;
+}
+
+a:hover span:nth-child(3){
+    opacity: 0.6;
+    transform: translate(1rem, -1rem);
+}
+
+a:hover span:nth-child(4){
+    opacity: 0.8;
+    transform: translate(1.5rem, -1.5rem);
+}
+
+a:hover span:nth-child(5){
+    opacity: 1;
+    transform: translate(2rem, -2rem);
+}
+
+a:hover:nth-child(1) span{
+    box-shadow: -0.1rem 0.1rem 0.3rem #1dcaff;
+}
+
+a:hover:nth-child(2) span{
+    box-shadow: -0.1rem 0.1rem 0.3rem #ff0050;
+}
+
+.text {
+    opacity: 0;
+}
+
+a:hover .text{
+    bottom: -3.5rem;
+    opacity: 1;
+}
+
+.projects{
+    margin-top: 10rem;
+}
+
+.projects h1{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: var(--phone-font-size);
+}
+
+.name-project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.name-project a{
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+    border: solid;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.name-project a:hover{
+    opacity: 0.6;
+}
+
+@media (min-width:768px){
+    .name-project a{
+        font-size: 2rem;
+        font-family: var(--primary-font);
+        border: solid;
+        padding: 0.8rem;
+        border-radius: 0.8rem;
+    }
+}
+
+.project-name-one{
+    color: rgb(73, 57, 94);
+}
+
+.project-name-two{
+    color: rgb(255, 234, 0);
+}
+
+@media(min-width:768px){
+
+    .projects h1{
+        font-size: var(--normal-font-size);
+    }
+
+}
+
+.projects h2{
+    margin-top: 0;
+}
+
+.tech-icons-container{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.image-project{
+    margin-top: 2rem;
+    margin-bottom: -5rem;   
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+    border-radius: 2rem; 
+}
+
+.image-project img{
+    clip-path: inherit; /* Hereda la forma del contenedor */
+    border-radius: 2rem;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-project img:hover{
+    transform: scale(1.2);
+}
+
+.skills-container{
+    margin-top: 14rem;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.skill{
+    display: flex;
+    align-items: center;
+    border: solid gray;
+    border-radius: 1rem;
+    border-width: 0.1rem;
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+    padding: 0 0.8rem;
+    background-color: rgb(37, 37, 40); /* #1a1a1c con 70% de opacidad */
+    gap: 1rem;
+}
+
+@media(min-width:768px){
+
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+    }
+    
+    .skill{
+        display: flex;
+        align-items: center;
+        border: solid gray;
+        border-radius: 1rem;
+        border-width: 0.1rem;
+        font-size: 1.5rem;
+        font-family: var(--primary-font);
+        padding: 0 1rem;
+        background-color: rgb(37, 37, 40); /* #1a1a1c con 70% de opacidad */
+        gap: 1rem;
+    }
+
+}
+
+.skill img{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.contact{
+    margin-top: 8rem;
+}
+
+.contact h1{
+    font-size: var(--phone-font-size);
+}
+
+.contact-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    border: solid gray;
+    border-radius: 1rem;
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+}
+
+footer{
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: var(--primary-font);
+}
+
+@media(min-width:768px){
+    .contact-data{
+        font-size: 2rem;
+    }
+
+    .contact h1{
+        font-size: var(--normal-font-size);
+    }
+
+    footer{    
+        font-size: 1.5rem;
+    }
+
+}
+
+
